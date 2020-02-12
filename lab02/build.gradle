@@ -1,9 +1,10 @@
+
 plugins {
     id "application"
 }
 apply plugin: 'java'
 ext {
-   javaMainClass = "gradleDemo.Demo"
+   javaMainClass = "lab02.CSVDemo"
 }
 application {
     mainClassName = javaMainClass
@@ -13,4 +14,8 @@ application {
  }
  dependencies {
    compile group: 'commons-validator', name: 'commons-validator', version: '1.4.1'
+
+    compile group: 'org.apache.commons', name: 'commons-csv', version: '1.1'
+
+
  }
